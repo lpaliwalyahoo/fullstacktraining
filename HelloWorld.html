@@ -1,0 +1,53 @@
+  <!DOCTYPE html>
+<html>
+<header>
+<script>
+	function validate(){
+		
+		if (document.getElementById("FirstName").value=="") {
+			alert("First name is mandatory.");			
+		}
+		if (document.getElementById("LastName").value=="") {
+			alert("LastName is mandatory.");			
+		}
+		if (document.getElementById("FirstName").value!="" && document.getElementById("LastName").value!="") {
+			document.write("Your reequest is sucessfully sumitted");
+		}
+		
+	}
+</script>
+</header>
+<body>
+<form name="myForm">
+
+<h1 >Open account request</h1>
+
+
+<table>
+	<tr>
+		<td>First name</td>
+		<td><input name="FirstName" id="FirstName" type="textbox" ></input></td>		
+	</tr>
+	<tr>
+		<td>Last name</td>
+		<td><input name="LastName" id="LastName" type="textbox" ></input></td>		
+	</tr>
+	<tr>
+		<td>Country</td>
+		<td><select name="Country" type="textbox" >
+			<option value="India">India</option>
+			<option value="India">UK</option>
+			<option value="India">USA</option>
+		</select></td>		
+	</tr>	
+	<tr>
+		<td>&nbsp;</td>		
+		<td><input name="submittbutton" type="button" value="CLick me to submit the form" onClick="validate();"></input></td>
+		
+	</tr>	
+
+<table>
+</form>
+
+</body>
+</html>
